@@ -1,0 +1,93 @@
+.about_section{
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0;
+}
+
+.section_title{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+
+.sobremi_section{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio_section{
+    width: 60vw;
+    text-align: center;
+}
+
+.proyectos_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.card2 {
+    text-align: center;
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+   }
+
+
+   .button {
+    --black: #000000;
+    --ch-black: #141414;
+    --eer-black: #1b1b1b;
+    --night-rider: #2e2e2e;
+    --white: #ffffff;
+    --af-white: #f3f3f3;
+    --ch-white: #e1e1e1;
+    border-radius: 8px;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 15px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    transition-duration: .2s;
+    background-color: var(--ch-black);
+    transition: 0.3s ease;
+  }
+  
+  .button:hover{
+    background-color: white;
+    color: #000000;
+  }
+
+  
+  .sobremi_content{
+    padding: 1rem;
+  }
+
+  .sobremi_content>p{
+    font-size: 0.9rem;
+    background-color: transparent;
+  }
+
+
+  .button_container{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+
+  
+
+

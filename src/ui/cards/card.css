@@ -1,0 +1,89 @@
+.card {
+    position: relative;
+    width: 350px;
+    aspect-ratio: 16/9;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1c1c1c; /* Adjust transparency */
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #fff; /* Changed color for visibility */
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 10px;
+    font-size: 14px; /* Increased font size for better readability */
+    color: #e2dede; /* Changed color for visibility */
+    line-height: 1.4;
+  }
+  
+  .card__button {
+    padding: 15px;
+    margin: 0.5rem 0.5rem 0;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    color: #1c1c1c;
+    cursor: pointer; /* Adding cursor pointer */
+    transition: background 0.3s ease; /* Adding button hover transition */
+  }
+  
+  .card__button:hover {
+    background: #555;
+    color: #fff;
+  }
+  
+  .secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: background 0.3s ease, color 0.3s ease; 
+  }
+  
+  .secondary:hover {
+    background: #777;
+    color: #ffffff;
+  }
+
+
+  .card_img{
+    width: 350px;
+  }
+  
